@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- device size detection-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Page title, appears in title bar-->
+  <title>CSCI434 Web Programming 2023</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!form addition -->
+  <h2> Addition </h2>  
+    <p>Type a number: <input id="first"></p>
+    <p>Another number: <input id="second"></p>
+    <button onclick="add()">Add them</button>
+    <p>Sum = <input id="answer"></p>
+	<!-- 10% discount -->
+    <p>After discount = <input id="discount"></p>	
+  <!form ends -->
+  <hr>
+  <!form multiplication -->
+  <h2> Multiplication </h2>
+    <p>Type a number: <input id="fnum"></p>
+    <p>Another number: <input id="snum"></p>
+    <button onclick="multiply()">Multiply them</button>
+    <p>Product = <input id="answer2"></p>
+	<!-- 10% discount -->
+    <p> After discount = <input id="discount2"></p>	  
+  <!form ends -->
+  <hr>  
+</body>
+<script>
+  //function declaration
+  function add()
+  {
+    //declares 3 variables
+    var numOne, numTwo, sum, discount;
+    //get user input in both field
+    numOne = parseInt(document.getElementById("first").value);
+    numTwo = parseInt(document.getElementById("second").value);
+    //add both numbers
+    sum = numOne + numTwo;
+	// add 10% discount
+	discount = sum - (sum * 0.1);
+    //call function
+    document.getElementById("answer").value = sum;
+	document.getElementById("discount").value = discount;
+  }
+    function multiply()
+  {
+    //declares 3 variables
+    var numOne, numTwo, product, discount;
+    //get user input in both field
+    numOne = parseInt(document.getElementById("fnum").value);
+    numTwo = parseInt(document.getElementById("snum").value);
+    //add both numbers
+    product = numOne * numTwo;
+	// add 10% discount
+	discount = product - (product * 0.1);	  
+    //call function
+    document.getElementById("answer2").value = product;
+	document.getElementById("discount2").value = discount;
+  }
+</script>
+</html>

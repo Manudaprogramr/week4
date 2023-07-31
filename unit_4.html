@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- device size detection-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Page title, appears in title bar-->
+	<title>CSCI434 Web Programming 2023</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div>
+		<ul>
+			<li><a href="unit_3.html"> &lt; </a></li>
+			<li><a href="index.html"> Home </a></li>
+			<li><a href="coming_soon2.html"> &gt; </a></li>			
+		</ul>
+	</div>
+	<h1>How to build a webpage with HTML and CSS.</h1>
+	
+	<div class="row">
+		<div class="column">
+			<p>To build a webpage using HTML And CSS open a text editor.
+				Use notepad for Windows, and TextEdit for Mac. Extra steps for Mac users, after opening TextEdit, click format, click Make plain text. On your desktop make a new folder name it "root". Save your file with the name "index.html" in the root folder. 
+			</p>
+		</div>
+		<div class="column">
+			<img src="textedit.png" alt="Format TextEditor">
+		</div>
+		<div class="column">
+			<img src="textedit1.png" alt="Text editor">
+		</div>
+		<div class="column">
+			<p> You are ready to start typing your HTML code.
+				I your index.html file type the following.
+				</p>
+			<pre>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt; My first page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+	&lt;h1&gt;Trying HTML and CSS&lt;/h1&gt;
+	&lt;p&gt; This is my first webpage using HTML and CSS.&lt;/p&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;
+			</pre>
+			
+		</div>	
+		<div class="column">
+			<p> To add your CSS style using external file you do the following: <br>
+				Add the link to your html file (see below).
+			</p>
+				<pre>
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt; &lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="style.css"&gt;	  
+  &lt;/head&gt;
+				</pre>
+			<p>In your CSS file type the following:</p>
+			<pre>
+Body{
+	background-color: slategray;
+	color: whitesmoke;
+	text-align: center;
+}			
+			</pre>
+			
+		</div>
+		<div class="column">
+			<img src="final1.png" alt="Webpage without CSS">
+		</div>
+		<div class="column">
+			<img src="final.png" alt="Webpage with CSS">
+		</div>		
+	</div>
+			<hr>
+		<p>Thanks for following this tutorial!<br> For HTML and CSS tutorials please see videos below.</p>
+			<hr>
+		<div class="column">
+			<iframe src="https://www.youtube.com/embed/dD2EISBDjWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+		<div class="column">
+			<iframe src="https://www.youtube.com/embed/-USAeFpVf_A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>		
+	
+	<br><br><br>	
+	<!-- Footer section holds information aboutthe developer(s). -->
+	<footer>
+		<p> Built by Midi Emmanuel. CSCI434 Web Programming, 2023.</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,155 @@
+body{
+		/* Change the default color of the background to gray, text automatically centered, margin and padding creates spaces around the text in the paragraphs. */
+		font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+		font-size: 1.3vw;
+		background-color: #f2f2f2;
+		text-align: center;
+		margin: 1% 5%;
+		padding: 0 5%;
+	}
+    pre{
+		text-align: left;
+    }
+	p{
+		/* Defines the txt size */
+		font-size: 1.5em;
+	}
+	hr{
+		/* Overrides the default values of the ruler */
+		height: 15px;
+		border-top: 5px solid #e6e6e6;
+		border-left: 3px solid #e6e6e6;
+	}
+	h1{
+		font-size: 2.5em;
+	}
+	h2{
+		font-size: 1.875em;
+	}
+	/* Start unorded list */
+	ul{
+		list-style-type: none;
+	}
+	li{
+		display: inline;
+	}
+	li a{
+		background-color: #8c8c8c;
+		font-size: 1.5em;
+		color: #000;
+		padding: 5px 10px;
+		margin: 0 3px;
+		border-radius: 10px;
+		border: 3px solid #e6e6e6;
+	}
+	/* End of list */
+
+/* responsive section */
+	@media (max-width: 48em) {
+  		li a {
+    	display: block;
+		margin: 5% 0;
+		border: 0 solid #fff;
+		background-color: #f2f2f2;
+		font-size: 12px;
+		color: #015D04;
+  	}
+}
+	/* remove default anchor style, show links that have already been clicked
+	change style when mouse pointer is over link
+	*/
+	a{
+		text-decoration: none;
+	}
+	a:active{
+		background-color: #4a6a8a;
+		text-decoration: line-through;
+		color: #fff;
+	}
+	a:visited{
+		background-color: #ecf9f2;
+	}
+	a:hover{
+		background-color: #9fdfbf;
+	}
+	/* break inline display*/
+	section li a{
+		display: block;
+	}
+@media only screen and (max-width: 800px){
+	 li a{
+		background-color: transparent;
+	}
+	li a:hover{
+		background-color: transparent;
+	}
+}
+	/* overides default picture settings */		
+	img{
+		width: 50%;
+		height: 30%;
+		border: 5px solid #8c8c8c;
+	}
+	/* display link, stop link from executing */
+	.disbaled_anchor{
+		pointer-events: none;
+	}
+	/* active linnk shows differently */
+	.active_anchor{
+		text-decoration: line-through;
+		color: #53c68c;
+	}
+	/* Keep sections side by side */
+	.container{
+		float: left;
+		width: 50%;
+		height: auto;
+		margin: 0 0 10% 0;
+	}
+	.container20{
+		float: left;
+		width: 20%;
+		height: auto;
+		margin: 0 0 10% 0;	
+	}
+	.container60{
+		float: left;
+		width: 60%;
+		height: auto;
+		margin: 0 0 10% 5%;
+	}
+	.row{
+		content: "";
+		display: table;
+		clear: both;
+	}
+    .column{
+		float: left;
+		width: 45%;
+		padding: 2%;
+    }
+	/* overrides default form settings*/	
+	form{
+		margin-bottom: 10%;
+	}
+	/* define iframe sizes */	
+	iframe{
+		width: 100%;
+		height: 500px;
+	}
+	footer{
+		/*Gives txt added to the footer a different size than the body */
+		font-size: 8px;
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: #8c8c8c;
+		margin: 50px 0 0 0;
+	}
+	
+	
+	
+	
+	
+	

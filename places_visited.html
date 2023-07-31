@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- device size detection-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Page title, appears in title bar-->
+	<title>CSCI434 Web Programming 2023</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div>
+		<ul>
+			<li><a href="unit_2.html"> &lt; </a></li>
+			<li><a href="index.html"> Home </a></li>
+			<li><a href="coming_soon1.html"> &gt; </a></li>			
+		</ul>
+	</div>	
+	<section class="container20">
+		<ul>
+
+			<li><a href="unit_3.html"> Unit 3</a></li>
+			<li class="disabled_anchor"><a class="active_anchor" href="places_visited.html">Photos</a></li>
+			<li><a href="youtube.html">Youtube</a></li>
+			<li><a href="math.html"> Math </a></li>	
+		</ul>
+	</section>
+	<section class="container60">
+		<p> Refresh the page to see different pictures</p>
+		<iframe id ="pic" src="stamp.png" align="center">
+		</iframe>
+	</section>	
+
+	<br><br><br>	
+	<!-- Footer section holds information aboutthe developer(s). -->
+	<footer>
+		<p> Built by Midi Emmanuel. CSCI434 Web Programming, 2023.</p>
+	</footer>
+	<script>
+		photo = ["cal_tower.png", "stamp.png", "stamp0.png", "stamp1.png"];
+		photoLength = photo.length;
+		shuffle = Math.random();
+		shuffle = shuffle*photoLength;
+		shuffle = Math.floor(shuffle);
+		currentImage = photo[shuffle];
+		pic.src = currentImage;
+	</script>
+</body>
+</html>
